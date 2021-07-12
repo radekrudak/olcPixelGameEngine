@@ -82,8 +82,16 @@
 	able to, in which case try launching your program like this:
 
 	vblank_mode=0 ./YourProgName
-
-
+	
+	
+	
+	Compiling in Code::Blocs on Linux
+ 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        Go to setings -> Compiler->Linker Settings (tab) and in "other linker settings" paste: -lX11 -lGL -lpthread -lpng -lstdc++fs -std=c++17
+        As you migt guess it those are options from comand from section above.
+	It should be enough but putting std=c++17 in "Other compiler options" in Compiler settings tab 
+         or/and cheking "Have g++ follow the c++17 ISO c++ language standar [-std=c++17]" shoudn't hurt and might even help if code don't want to compile.
+ 
 
 	Compiling in Code::Blocks on Windows
 	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -194,7 +202,7 @@
 
 	Author
 	~~~~~~
-	David Barr, aka javidx9, ©OneLoneCoder 2018, 2019, 2020, 2021
+	David Barr, aka javidx9, Â©OneLoneCoder 2018, 2019, 2020, 2021
 */
 #pragma endregion
 
